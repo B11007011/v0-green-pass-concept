@@ -1,30 +1,107 @@
-# Green pass concept
+# GreenPass - Sustainable Mobility App
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+GreenPass is a web application that helps users track their green mobility activities, earn rewards, and reduce their carbon footprint. The app is built with Next.js, TypeScript, and Tailwind CSS, providing a fast, responsive, and beautiful user experience.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/b11007011s-projects/v0-green-pass-concept-gw)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/HGhyXzvSDov)
+## Features
 
-## Overview
+- **Dashboard**: Track your green credits, CO2 savings, and connected accounts
+- **Transport Tracking**: Monitor your transportation methods and their environmental impact
+- **Rewards System**: Earn green credits for sustainable mobility choices and redeem them for rewards
+- **Impact Visualization**: See your carbon savings over time with interactive charts
+- **Connected Accounts**: Link your public transport cards, bike-sharing accounts, and more
+- **Responsive Design**: Works on all devices, from mobile to desktop
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Technology Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Components**: [Radix UI](https://www.radix-ui.com/)
+- **State Management**: React hooks
+- **Data Visualization**: [Recharts](https://recharts.org/)
+- **Form Handling**: [React Hook Form](https://react-hook-form.com/) with [Zod](https://github.com/colinhacks/zod)
+- **Notifications**: [Sonner](https://sonner.emilkowal.ski/)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18.0.0 or later
+- pnpm or npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/green-pass.git
+   cd green-pass
+   ```
+
+2. Install dependencies:
+   ```bash
+   pnpm install
+   # or
+   npm install
+   ```
+
+3. Run the development server:
+   ```bash
+   pnpm dev
+   # or
+   npm run dev
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+
+### Building for Production
+
+```bash
+pnpm build
+pnpm start
+# or
+npm run build
+npm start
+```
+
+## Project Structure
+
+```
+green-pass/
+├── app/                 # Next.js app directory
+│   ├── admin/           # Admin panel pages
+│   ├── api/             # API routes
+│   └── ...              # Other pages
+├── components/          # React components
+│   ├── ui/              # UI components
+│   └── ...              # Feature components
+├── hooks/               # Custom React hooks
+├── lib/                 # Utility functions
+├── public/              # Static assets
+└── styles/              # Global styles
+```
+
+## Environment Variables
+
+Create a `.env.local` file in the root directory with the following variables:
+
+```
+NEXT_PUBLIC_API_URL=your_api_url
+```
 
 ## Deployment
 
-Your project is live at:
+This application is deployed on [Vercel](https://vercel.com/b11007011s-projects/v0-green-pass-concept-gw).
 
-**[https://vercel.com/b11007011s-projects/v0-green-pass-concept-gw](https://vercel.com/b11007011s-projects/v0-green-pass-concept-gw)**
+Originally built with [v0.dev](https://v0.dev/chat/projects/HGhyXzvSDov), the project has been optimized and enhanced for production.
 
-## Build your app
+## License
 
-Continue building your app on:
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-**[https://v0.dev/chat/projects/HGhyXzvSDov](https://v0.dev/chat/projects/HGhyXzvSDov)**
+## Acknowledgments
 
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Radix UI](https://www.radix-ui.com/)
+- [Recharts](https://recharts.org/)
+- [v0.dev](https://v0.dev/)
